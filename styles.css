@@ -11,18 +11,20 @@ main {
     min-height: 100vh;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(4, 1fr);
-   
+    grid-template-columns: repeat(4, 1fr);  
 }
 
 .result{
-    background-image: linear-gradient(white, blue);
-    border-radius: 20px;
-    padding: 1rem;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    padding: 2rem;
     color: white;
     grid-column: 2/3;
 }
    
+div, summary {
+    padding: 1.5rem;
+}
 
 .summary{
     margin-left:-20px;
@@ -32,36 +34,43 @@ main {
     grid-column: 3/4;
     border: .5rem;
     border-right-style: outset;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 30px;
     border-bottom-style: outset;
     border-color: hsla(hue, saturation, lightness, alpha);
     }
 
 .score {
     margin: auto;
-    background-color: pink;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
-    width: 3.5rem;
-    padding: 1em;
-       
+    width: 6rem;
+    padding: 3em;   
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 1rem;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
     
 }
 
 h4 {
-    
+    font-size: 2rem;
+    margin: 1em;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 2rem 2rem;
 }
