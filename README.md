@@ -19,8 +19,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: https://github.com/aljager1983/qr-code-challenge
-- Live Site URL: https://aljager1983.github.io/qr-code-challenge/
+- Solution URL: https://github.com/aljager1983/Results_summary_component
+- Live Site URL: https://aljager1983.github.io/Results_summary_component/
 
 ## My process
 
@@ -33,36 +33,16 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### What I learned
 
-Laying out the html is a bit easy. The styling part was less easy. At first I was hesitant to use CSS grid since I wasn't familiar with it. But it took me hours and still haven't got the result I wanted, so I crammed to study CSS grid and finally got the result I wanted. 
-
-Below are the code snippets for the CSS grid:
-
-```css for div element with className of container and content
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    height: 100vh;
-}
-
-.content {
-    grid-column: 2/3;
-    margin: auto;
-    padding: 10px;
-    max-width: 300px;
-    background-color: white;
-    border-radius: 20px;
-}
-```
+Markup was easy to deploy. The CSS was tougher, I still have a lot to go especially the CSS grid
 
 
 ### Continued development
 
-I would still need to practice more on most aspects of CSS styling.
+I would still need to practice more on most aspects of CSS styling especially on grid.
 
 ### Useful resources
 
-- [The Net Ninja - Mobile-first build with CSS Grid](https://www.youtube.com/watch?v=PM3XW_1RAIs&list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4) - This helped me for achieving responsiveness and mobile-ready pages. I really like his method of breaking down the topics.
+- [CSS Grid Course by freeCodeCamp.org](https://www.youtube.com/watch?v=t6CBKf8K_Ac&t=2984s) - This helped me for achieving grid layouts, but still I would practice more because there are some screen sizes where the look is not that great.
 
 ## Author
 
