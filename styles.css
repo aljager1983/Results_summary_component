@@ -1,27 +1,19 @@
-
-
 * {
     font-family: 'Hanken Grotesk', sans-serif;
     margin: 0;
     padding: 0; 
 }
 
-html {
-    font-size: 20px;
-}
-
 main {
-    
     min-height: 100vh;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);  
-    
 }
 
 .result{
+    min-height: 60%;
     z-index: 1;
-    min-height: 70%;
     text-align: center;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 30px;
@@ -30,17 +22,20 @@ main {
 }
 
 .summary{
-    min-height: 70%;
-    min-width: 100%;
-    margin: 0 0 0 -2rem;
+    min-height: 60%;
+    /* min-width: 100%; */
+    margin: 0rem 0rem 0rem -2rem;
     background-color: white;
     grid-column: 3/4;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
-    box-shadow: 5px 10px 18px hsl(221, 100%, 96%);
+    box-shadow: 5px 10px 18px hsl(221, 100%, 6%);
     display: grid;
-    grid-template-rows: 15% 15% 15% 15% 15% 20%;
+    grid-template-rows: 20% 15% 15% 15% 15% 20%;
     padding: 0 0 0 2rem;
+    align-content: center;
+    justify-content: center
+    ;
     }
 
 .score {
@@ -48,11 +43,11 @@ main {
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     width: 8rem;
-    padding: 2em;   
+    padding: 2rem;   
 }
 
 .remarks {
-    padding: 2rem 4rem;
+    padding: 1rem 3rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -64,12 +59,12 @@ main {
     text-align: left;
     background-color: hsl(221, 100%, 96%);
     border-radius: 10px;
-    margin: .75rem 1.5rem;
+    margin: 0;
     padding: 1rem;
 }
 
 .sumheader {
-    margin: 2rem 0 0 1rem;
+    margin: 2.5rem 0 0 1rem;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -86,19 +81,18 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500; 
-    color: hsla(241, 100%, 89%, 70%);
+    color:hsla(0, 0%, 100%, 50%)
 }
 
 h4 {
     font-size: 2.1rem;
-    padding: 2rem 0rem 1rem 0rem;
+    padding: 2rem;
 }
 
 img {
     grid-column: 1/2;
-    padding: .3rem;
 }   
 
 .point {
@@ -112,38 +106,46 @@ img {
     color: hsl(241, 100%, 89%);
 }
 
+
+
 .reaction {
     grid-column: 2/4;
     text-align: left;
-    color: hsl(0, 100%, 67%);  
+    color: hsl(0, 100%, 67%);
+     
+    
 }
 
 .memory {
     grid-column: 2/4;
     text-align: left;
-    color: hsl(39, 100%, 56%); 
+    color: hsl(39, 100%, 56%);
+    
 }
 
 .verbal {
     grid-column: 2/4;
     text-align: left;
     color: hsl(166, 100%, 37%);
+
 }
 
 .visual {
     grid-column: 2/4;
     text-align: left;
     color: hsl(234, 85%, 45%);
+    
 }
 
 .continue {
     background-color: hsl(224, 30%, 27%);
+    /* background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); */
     border-radius: 30px;
     color: white;
     margin: 1.5rem;
     text-align: center;
     font-size: 1.2rem;    
-    padding: 1rem 8rem;
+    padding: .5rem 8rem;
 }
 
 span:hover {
@@ -152,18 +154,15 @@ span:hover {
 
 @media screen and (max-width: 375px) {
 
-    html {
-        font-size: 15px;
-    }
         main {
-            
             display: grid;
             place-items: center;
             grid-template-columns: 1fr;  
         }
         
         .result{
-            margin: -2rem 0rem 0rem 0rem;
+            z-index: 1;
+            margin: -2rem 0rem 1rem 0rem;
             padding-top: 1rem ;
             text-align: center;
             background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -178,38 +177,36 @@ span:hover {
             grid-row: 2;
             grid-column: 1/2;      
             display: grid;
-            grid-template-rows: repeat(6, 1fr);
+            grid-template-rows: 20% 15% 15% 15% 15% 20%;
             min-width: 100%;
-            min-height: 70%;
             margin: 0rem; 
             border-bottom-right-radius: 0px;
             border-top-right-radius: 0px;
-            box-shadow: none; 
+            box-shadow: none;
+            
             }
 
-        .sum_details {
-            display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            padding: 1.5rem;
-            margin: 1rem;
-        }
-        
         .sumheader {
-            margin: 1rem;
-            padding-top: 2rem;
+            margin: 2rem 1rem 1rem 1rem;
             font-size: 1.5rem;
             font-weight: 700;
         }
-
+        .sum_details {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            margin: .75rem;
+            padding: .5rem 1rem 1rem 1rem;
+        }
+        
         .remarks {
-            padding: 1rem 4rem 2rem 4rem;
+            padding: 0 2rem 1rem 2rem;
             font-size: 1rem;
         }
-                
+      
         img {
             grid-column: 1/2;
-            text-align: left;
-            padding: 0rem;
+            padding-top: 0.25rem;
+            /* text-align: left; */
         }   
         
         .point {
@@ -231,7 +228,6 @@ span:hover {
         .memory {
             grid-column: 2/4;
             text-align: left;
-            
         }
         
         .verbal {
@@ -246,12 +242,13 @@ span:hover {
         
         .continue {
             background-color: hsl(224, 30%, 27%);
+            /* background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); */
             border-radius: 30px;
             color: white;
-            margin: 1rem 1.5rem 1.5rem 1rem ;
+            margin: .5rem 1rem 1rem 1rem;
             text-align: center;
-            font-size: 1.2rem;    
-            padding: 1rem;
+            font-size: 1.25rem;    
+            padding: 1rem 2rem;
         }
        
         span:hover {
